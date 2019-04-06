@@ -1,1 +1,68 @@
-<h1>Github Pages: Tribute Page</h1>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<h1 id="title">Survey Form</h1>
+<div id="main">
+    <p id="description">Let us know how we're doing!</p>
+    <form id="survey-form">
+        <div id="formDivider">
+            <div class="labels">
+                <label id="name-label" for="nInput">Name:</label>
+            </div>
+            <div class="inputs">
+                <input id="name" type="text" name="nInput" placeholder="Enter your name" required><br>
+            </div>
+            <div class="labels">
+                <label id="email-label" for="eInput">Email:</label>
+            </div>
+            <div class="inputs">
+                <input id="email" type="email" name="eInput" placeholder="Enter your email" required><br>
+            </div>
+            <div class="labels">
+                <label id="number-label" for="aInput">Age:</label>
+            </div>
+            <div class="inputs">
+                <input id="number" type="number" name="aInput" min="13" max="150" placeholder="00" required>
+            </div>
+
+            <div id="dropdown">
+                <h4 id="dropdownHeader">How did you hear about us?</h4>
+                <select>
+                    <option disabled value>Select an option</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="github">Github</option>
+                    <option value="wakatime">Wakatime</option>
+                    <option value="freecodecamp">FreeCodeCamp</option>
+                    <option value="codepen">CodePen</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div id="radios">
+                <h4 id="radiosHeader">Do you approve of this webpage design?</h4>
+                <label for="like">
+                    <input type="radio" id="like" name="feedback">Like
+                </label>
+                <label for="dislike">
+                    <input type="radio" id="dislike" name="feedback">Dislike
+                </label>
+                <label for="uncertain">
+                    <input type="radio" id="uncertain" name="feedback">Uncertain
+                </label>
+            </div>
+            <div id="checkHeader">
+                <h4>What would you like to see added?</h4><br>(Check all that apply):
+            </div>
+            <div id="checkboxes">
+                <label for="about">
+                    <input type="checkbox" id="about" name="additions">About Section
+                </label>
+            </div>
+            <div id="hoverDropdown"><br>
+                <a id="dropAnchor">Dropdown</a>
+                <div id="dropdownContent">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
